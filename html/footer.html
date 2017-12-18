@@ -1,0 +1,105 @@
+<script type="text/javascript">
+  var checkInCus = document.getElementById('theCheckIn');
+  var checkOutCus = document.getElementById('theCheckOut');
+  checkInCus.value = '';
+  checkOutCus.value = '';
+
+  function checkCusClick() {
+    var filter = document.getElementsByClassName('refine')[0];
+    checkInCus.value = '';
+    checkOutCus.value = '';
+    filter.click();
+  }
+
+  var searchContainerList = document.getElementsByClassName('ArnLeftSearchContainer');
+  var searchContainer = searchContainerList[0];
+
+  function scrollCusClick() {
+    if (searchContainer.getAttribute('style').includes('display: none')) {
+      checkCusClick();
+    }
+  }
+
+  var noDate = document.getElementsByClassName('ArnNoDates');
+  for (btn in noDate) {
+    var children = noDate[btn].childNodes;
+    var child = children[0];
+    child.addEventListener('click', scrollCusClick);
+  }
+</script>
+
+<script type="text/javascript">
+  var propertiesSec = document.getElementsByClassName('ArnRightListContainer')[0];
+  var textHeader = document.createElement('div');
+  //textHeader.classList.add('textHeader');
+  textHeader.className += ' textHeader';
+  var textHeaderTitle = document.createElement('h3');
+  textHeaderTitle.innerText = 'Host Hotel Info';
+  var textHeaderCont = document.createElement('div');
+  textHeaderCont.innerHTML =
+    "<div class='cusHostHotelInfo'><img src='/appSkins/41157/v6/themes/new/images/host_hotel_raw.jpg' alt='Embassy Suites By Hilton, Denton TX'><h4>Embassy Suites by Hilton (NEW HOTEL IN DENTON!)</h4><p>3100 Town Center Trail Denton, Texas 76201</p> <p>940-243-3799</p><p>FREE made to order Breakfast</p><p>FREE nightly evening reception</p><p>Ask for the Friends of Achievers Special Invite Rate, $139!</p><p>Reservation must be made by Wed, December 13th, 2017</p><p>11 miles to competition venue</p></div><h4>Book Additional Hotels Below</h4>";
+
+  textHeader.appendChild(textHeaderTitle);
+  textHeader.appendChild(textHeaderCont);
+
+  var viewCheckLanding = document.getElementsByClassName('landingBottomContent');
+
+  if (viewCheckLanding.length) {
+    var searchContainer = document.getElementsByClassName('ArnSearchContainerMainDiv')[0];
+    //textHeader.classList.add('textHeader--landing');
+    textHeader.className += " textHeader--landing";
+    searchContainer.insertBefore(textHeader, searchContainer.firstChild);
+  } else {
+    propertiesSec.insertBefore(textHeader, propertiesSec.firstChild);
+  }
+</script>
+
+<script>
+  var cusMToggle = document.getElementById('mNavToggle');
+  var cusNavToTog = document.getElementsByClassName('cusCont__orgNav')[0];
+  var cusMNavTogState = false
+
+  function toggleCusMNav() {
+    if (cusMNavTogState === false) {
+      cusNavToTog.style.display = 'block';
+      cusMNavTogState = true;
+    } else if (cusMNavTogState === true) {
+      cusNavToTog.style.display = 'none';
+      cusMNavTogState = false;
+    }
+  }
+  cusMToggle.addEventListener('click', toggleCusMNav);
+</script>
+<script>
+  var hotelsSearch = document.querySelector('#theBody.SearchHotels');
+  if (hotelsSearch) {
+    function newResultsMsg() {
+      var searching = document.getElementById('searching');
+      var pollingFinished = document.querySelector('.ArnRightListContainer .pollingFinished');
+      // if we're running a search and polling hasn't finished, introduce a timeout
+      if (searching && !pollingFinished) {
+        console.log('polling');
+        return setTimeout(newResultsMsg, 500);
+      }
+      console.log('polling finished');
+      var resultsTitle = document.querySelector('.topPager.ArnPagerContainer .ArnPagerResult h3');
+      var resultsTitleArray = resultsTitle.textContent.split(" ").slice(0, 3);
+      var locationNum = resultsTitleArray.join(" ");
+      var resultTitleNewString = locationNum.concat(" 501 Swisher Rd,  Lake Dallas, TX 75065");
+      resultsTitle.textContent = resultTitleNewString;
+      return;
+    }
+    newResultsMsg();
+  }
+</script>
+
+<script>
+  var landingURL =
+    "https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=geo&longitude=-97.023785&latitude=33.134506&checkIn=01/12/2018&nights=2&currency=USD&locationLabel=501%20Swisher%20Rd,%20Lake%20Dallas,%20TX%2075065&radius=15";
+  if (window.location.href === landingURL) {
+    var checkIn = '01/12/2018';
+    var checkOut = '01/14/2018';
+    document.getElementById('theCheckIn').value = checkIn;
+    document.getElementById('theCheckOut').value = checkOut;
+  }
+</script>
