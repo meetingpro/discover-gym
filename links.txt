@@ -1,0 +1,7 @@
+reference link for theme:
+https://www.reservetravel.com/v6/?siteid=39628&theme=new&type=geo&longitude=-97.023785&latitude=33.134506&checkIn=01/12/2018&nights=2&currency=USD&locationLabel=501%20Swisher%20Rd,%20Lake%20Dallas,%20TX%2075065&points=-97.169972|33.225833|Embassy%20Suites%20by%20Hilton
+
+
+// working 1 - type: address, no checkIn no nights
+
+https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=address&address=747%20North%20Shepherd%20Drive&city=Houston&state=TX&radius=8
