@@ -6,6 +6,10 @@ https://www.reservetravel.com/v6/?siteid=39628&theme=new&type=geo&longitude=-97.
 
 https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=address&address=747%20North%20Shepherd%20Drive&city=Houston&state=TX&radius=8
 
-// working 1 - type: address, checkIn
+// working 2 - type: address, checkIn
 
 https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=address&address=747%20North%20Shepherd%20Drive&city=Houston&state=TX&checkIn=03/02/2018&radius=8&currency=USD
+
+// working 3 - type: geo
+
+https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=geo&longitude=-95.410287&latitude=29.784825&checkIn=03/02/2018&radius=8&currency=USD&locationLabel=747%20North%20Shepherd%20Drive
