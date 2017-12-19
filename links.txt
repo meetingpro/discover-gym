@@ -14,3 +14,6 @@ https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=address&address=74
 
 https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=geo&longitude=-95.410287&latitude=29.784825&checkIn=03/02/2018&radius=8&currency=USD&locationLabel=747%20North%20Shepherd%20Drive
 
+// working 4 - type: properties
+
+https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=geo&longitude=-95.410287&latitude=29.784825&checkIn=03/02/2018&radius=8&currency=USD&locationLabel=Discovery%20Gymnastics,%20747%20North%20Shepherd%20Drive&properties=12373,9513

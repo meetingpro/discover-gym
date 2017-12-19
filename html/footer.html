@@ -1,10 +1,10 @@
 <script type="text/javascript">
   /*
-          var checkInCus = document.getElementById('theCheckIn');
-          var checkOutCus = document.getElementById('theCheckOut');
-          checkInCus.value = '';
-          checkOutCus.value = '';
-          */
+                    var checkInCus = document.getElementById('theCheckIn');
+                    var checkOutCus = document.getElementById('theCheckOut');
+                    checkInCus.value = '';
+                    checkOutCus.value = '';
+                    */
 
   function checkCusClick() {
     var filter = document.getElementsByClassName('refine')[0];
@@ -29,7 +29,7 @@
     child.addEventListener('click', scrollCusClick);
   }
 </script>
-<!-- custom document body header insert
+
 <script type="text/javascript">
   var propertiesSec = document.getElementsByClassName('ArnRightListContainer')[0];
   var textHeader = document.createElement('div');
@@ -39,9 +39,9 @@
   textHeaderTitle.innerText = 'Host Hotel Info';
   var textHeaderCont = document.createElement('div');
   textHeaderCont.innerHTML =
-    "<div class='cusHostHotelInfo'><img src='/appSkins/41157/v6/themes/new/images/host_hotel_raw.jpg' alt='Embassy Suites By Hilton, Denton TX'><h4>Embassy Suites by Hilton (NEW HOTEL IN DENTON!)</h4><p>3100 Town Center Trail Denton, Texas 76201</p> <p>940-243-3799</p><p>FREE made to order Breakfast</p><p>FREE nightly evening reception</p><p>Ask for the Friends of Achievers Special Invite Rate, $139!</p><p>Reservation must be made by Wed, December 13th, 2017</p><p>11 miles to competition venue</p></div><h4>Book Additional Hotels Below</h4>";
+    "<div class='cusHostHotelInfo'><h3>Partnering with Hampton Inn and Crown Plaza hotels</h3><div class='cusHotelTxt'><h4>Hampton Inn & Suites- Houston I-10/Central</br><a href='https://secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=HOUKFHX&spec_plan=CHHFSA&arrival=20180301&departure=20180304&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT'>Book Here ($89/night)</a></h4></div><div class='cusHotelTxt'><h4>Crowne Plaza Northwest-Brookhollow</br><a href='https://www.ihg.com/crowneplaza/hotels/us/en/reservation/book?qAAR=6CBARC&qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qCiD=02&qCiMy=022018&qCoD=04&qCoMy=022018&qDest=12801+Northwest+Freeway+Houston+Texas+United+States&qFRA=1&qGRM=0&qGrpCd=SBI&qHtlC=HOUPN&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qRtP=6CBARC&qSHp=1&qSlH=HOUPN&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&method=redirect&icdv=99801505&icdv=99801505#roomratestitle'>Book Here ($79/night)</a></h4></div></div><h4 class='cusAditionalHotelSP'>Book Additional Hotels Below</h4>";
 
-  textHeader.appendChild(textHeaderTitle);
+  // textHeader.appendChild(textHeaderTitle);
   textHeader.appendChild(textHeaderCont);
 
   var viewCheckLanding = document.getElementsByClassName('landingBottomContent');
@@ -55,7 +55,6 @@
     propertiesSec.insertBefore(textHeader, propertiesSec.firstChild);
   }
 </script>
--->
 
 <script>
   var cusMToggle = document.getElementById('mNavToggle');
