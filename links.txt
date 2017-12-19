@@ -13,3 +13,4 @@ https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=address&address=74
 // working 3 - type: geo
 
 https://www.reservetravel.com/v6/?siteid=41157&theme=new&type=geo&longitude=-95.410287&latitude=29.784825&checkIn=03/02/2018&radius=8&currency=USD&locationLabel=747%20North%20Shepherd%20Drive
+

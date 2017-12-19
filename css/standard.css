@@ -286,16 +286,20 @@ header .headerLogo {
 /* results loaded body */
 
 .SearchHotels #searchForm .ArnPrimarySearchOuterContainer {
-  background-color: #000;
+  background-color: #ffd900;
 }
 
 #searchForm .ArnQuadSearchContainer.ArnPrimarySearchContainer {
-  background-color: #000;
+  background-color: #ffd900;
+}
+
+#theSearchBox span {
+  text-shadow: 0 1px 4px #999;
 }
 
 #searchForm #theSubmitButton,
 #searchForm #theOtherSubmitButton {
-  background-color: #ffd900;
+  background-color: #000;
 }
 
 /* landing page search form overrides */
