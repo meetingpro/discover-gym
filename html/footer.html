@@ -1,8 +1,10 @@
 <script type="text/javascript">
-  var checkInCus = document.getElementById('theCheckIn');
-  var checkOutCus = document.getElementById('theCheckOut');
-  checkInCus.value = '';
-  checkOutCus.value = '';
+  /*
+          var checkInCus = document.getElementById('theCheckIn');
+          var checkOutCus = document.getElementById('theCheckOut');
+          checkInCus.value = '';
+          checkOutCus.value = '';
+          */
 
   function checkCusClick() {
     var filter = document.getElementsByClassName('refine')[0];
@@ -70,6 +72,18 @@
     }
   }
   cusMToggle.addEventListener('click', toggleCusMNav);
+</script>
+
+<script>
+  if (window.location.href.indexOf('checkIn=') >= 0) {
+    var cusCheckInStart = window.location.href.indexOf('checkIn=') + 8;
+    var cusDatesTestChar = window.location.href[cusCheckInStart + 10];
+    if (cusDatesTestChar === '&') {
+      var cusCheckInDate = window.location.href.substring(cusCheckInStart, cusCheckInStart + 10);
+      document.getElementById('theCheckIn').setValue(cusCheckInDate);
+      document.getElementById('theCheckOut').setValue('03/04/2018');
+    }
+  }
 </script>
 <!-- custom location text
 <script>
